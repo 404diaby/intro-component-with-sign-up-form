@@ -16,7 +16,6 @@ This is a solution to the [Intro component with sign up form challenge on Fronte
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -30,85 +29,58 @@ Users should be able to:
   - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
+  **PS: firebase + submit alert ....**
+
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop Screen](./screenshots/DesktopView.png)
+![Desktop Screen * Active states](./screenshots/DesktopView-activeState.png)
+![Desktop Screen * Success submit](./screenshots/DesktopView-successSubmit.png)
+![Mobile Screen](./screenshots/MobileView.webm/)
+![Firebase Database](./screenshots/FirebaseDatabase.png/)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution Design: [Figma - only Desktop View](https://www.figma.com/file/XJeeX7mLhLa4GOrtFNzpRc/signup-form?type=design&mode=design&t=2pJQDxuug6tJdrfN-1)
+- Solution Users Story: [Figma - Diagram](https://www.figma.com/file/1a6Sj0CaarcrDQm6I8qY2s/signup-form---diagram---user-story?type=whiteboard&node-id=975%3A342&t=ZNFxXD0rtXn6fnoL-1)
 
+- Solution URL: [Github - repository](https://github.com/404diaby/intro-component-with-sign-up-form)
+- Live Site URL: [Vercel - hosting](https://intro-component-with-sign-up-form-one-mocha.vercel.app/)
+
+**PS: The first two was optional. A simple initiative on my part.**
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- css animation
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Firebase
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Actually I don't really manage perfectly data with javascript but  I really care about this so I'm going to look into it
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN page resource](https://developer.mozilla.org/fr/docs/Learn/Forms/Form_validation) - This helped me to manage form after sunbmissiob. I really liked this website and will use it going forward.
+- [Youtube video to use Firebase](https://www.youtube.com/watch?v=2crtIMKf9bs&ab_channel=CreativeTutorial) - This is an simple and amazing video which helped me finally understand little bit NO-SQL with Firebase. I'd recommend it to anyone still learning this concept.
+- [css animations  resources](https://animista.net/) - This is an amazing website which  there are lot of css animation to make yours website more smooth. I'd recommend it to anyone.
+- [readme generator](https://readme.so/fr/editor) - This is a website which you can edit your readme file and look each change in life. An others awesome website I discover.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
-## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+## 🔗 Author
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+[![Frontend Mentor](https://img.shields.io/badge/Front--end_mentor-0A66C2?style=for-the-badge&logo=symfony&logoColor=white)](https://www.frontendmentor.io/profile/404diaby)
+[![portfolio](https://img.shields.io/badge/my_portfolio-FF7B00?style=for-the-badge&logo=ko-fi&logoColor=white)](https://diaby-mamadou.vercel.app/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/404diaby)
+[![github](https://img.shields.io/badge/github-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/404diaby)
 
-## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
