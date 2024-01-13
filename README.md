@@ -36,7 +36,7 @@ Users should be able to:
 ![Desktop Screen](./screenshots/DesktopView.png)
 ![Desktop Screen * Active states](./screenshots/DesktopView-activeState.png)
 ![Desktop Screen * Success submit](./screenshots/DesktopView-successSubmit.png)
-![Mobile Screen](./screenshots/MobileView.webm/)
+![Mobile Screen](./screenshots/MobileView.mp4)
 ![Firebase Database](./screenshots/FirebaseDatabase.png/)
 
 
