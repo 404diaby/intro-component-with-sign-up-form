@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icon/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; padding: 1em; }
+    .attribution a { color: hsl(228, 45%, 44%);  text-decoration: none;}
+  </style>
+</head>
+<body>
+    <main>
+      <div id="leftPart">
+        <p>  Learn to code by watching others</p>
+        <p>
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. 
+        </p>
+      </div>
+      <div id="rightPart">
+        <p><span><span class="infoBold">Try it free 7 days</span> then </span> $20/mo. thereafter</p>
+        <form id="signup" action="#"   method="get" novalidate>
+          <span class="success hidden"> <strong>Thank you !!!</strong>  : Submission has been sent</span>
+          <div>
+             <input type="text" name="firstName" id="firstName" placeholder="First Name"  ><!-- attention injection sql-->
+          <span class="error"></span>
+
+          </div>
+         <div>
+           <input type="text" name="lastName" id="lastName" placeholder="Last Name"  > <!-- patterne--> <!-- attention injection sql-->
+          <span class="error"></span>
+
+         </div>
+         
+          <div>
+            <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address" > <!-- autocomplete="username" pattern --><!-- attention injection sql-->
+          <span class="error"></span>
+          </div>
+          
+
+          <div>
+            <input type="password" name="password" id="password" placeholder="Password"> <!-- attention injection sql--><!--autocomplete="current-password"pattern minlength="8" -->
+          <span class="error"></span>
+          </div>
+          
+
+
+          <input type="submit" value="CLAIM YOUR FREE TRIAL" >
+          <p>By clicking the button you agreeing <span>our <span class="TnSBold">Terms and Services<span></span></p>
+        </form>
+      </div>
+    </main>
+   
+  
+   <footer>
+      <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">404diaby</a>.
+      </p>
+    </footer>
+<script src="./js/signup-validForm.js"></script>
+<script type="module">
+  
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  
+  import {  getDatabase, ref, set, get, child } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyA_VxLe9RDqDkMzU32G56UD-Y_tljhBRn4",
+    authDomain: "signup-form-6d0e8.firebaseapp.com",
+    databaseURL: "https://signup-form-6d0e8-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "signup-form-6d0e8",
+    storageBucket: "signup-form-6d0e8.appspot.com",
+    messagingSenderId: "515595420714",
+    appId: "1:515595420714:web:64bd9d576bb98dff026f53"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+
+  document.forms['signup'].addEventListener("submit", function (event) {
+    // Chaque fois que l'utilisateur tente d'envoyer les données
+    // on vérifie que le champ email est valide.
+    
+      // S'il est invalide, on affiche un message d'erreur personnalisé
+      if (validateForm() === true) {
+        // Récupérer les valeurs du formulaire
+      const firstName = document.getElementById('firstName').value;
+      const lastName = document.getElementById('lastName').value;
+      const emailAddress = document.getElementById('emailAddress').value;
+      const password = document.getElementById('password').value;
+
+        
+      event.preventDefault();
+      set(ref(db, 'user/' + firstName),
+      {
+
+        firstName : firstName,
+       lastName : lastName,
+       emailAddress : emailAddress,
+       password : password,
+
+      });
+
+      document.querySelector('.success').classList.add('tracking-in-expand-fwd-top');
+      document.querySelector('.success').classList.remove('hidden');
+      setTimeout(() => {
+        window.location.reload();
+      }, 3000);
+
+      }else{
+        
+      event.preventDefault();
+      }
+  
+
+
+  },
+  false,
+);
+
+</script>
+</body>
+</html>
