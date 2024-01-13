@@ -36,7 +36,11 @@ Users should be able to:
 ![Desktop Screen](./screenshots/DesktopView.png)
 ![Desktop Screen * Active states](./screenshots/DesktopView-activeState.png)
 ![Desktop Screen * Success submit](./screenshots/DesktopView-successSubmit.png)
-![Mobile Screen](https://github.com/404diaby/intro-component-with-sign-up-form/assets/85366150/ac9958de-b375-412c-8ce6-923268fa4858)
+![Mobile Screen](
+
+https://github.com/404diaby/intro-component-with-sign-up-form/assets/85366150/e4b81037-ffed-4cb1-b92d-94f1fc33c3dc
+
+)
 ![Firebase Database](./screenshots/FirebaseDatabase.png/)
 
 
